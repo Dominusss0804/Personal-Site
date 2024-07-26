@@ -1,0 +1,255 @@
+body{
+    background-color: #FFF8F3;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+h2{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+h3{
+    font-family: "Merriweather", serif;
+}
+.column > p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.circle > p{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+.mcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.me{
+    border-radius: 50%;
+    height: 450px;
+}
+
+
+.circlebuttons{
+    display: flex;
+    gap: 20px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.resume{
+    background-color: #405D72;
+}
+
+.project{
+    background-color: #758694;
+}
+
+.footercontainer{
+    margin-top: 200px;
+}
+
+.circlelink{
+    text-decoration: none;
+    color: black;
+
+}
+
+/*resume*/
+.resumecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projectcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resumetext{
+    margin: 100px 0;
+}
+.resumecolumn1{
+    width: 30%;
+    /*background-color: yellow;*/
+}
+.projectcolumn1{
+    width: 40%;
+}
+
+.resumecolumn2{
+    width: 10%;
+    /*background-color: yellow;*/
+}
+
+.projectcolumn2{
+    width: 0;
+}
+
+.resumecolumn3{
+    width: 30%;
+    /*background-color: red;*/
+}
+
+.projectcolumn3{
+    width: 20%;
+}
+
+.projectlist{
+    width: 70%;
+}
+
+.space{
+    margin-top: 50px;
+}
+
+hr{
+    margin: 50px 170px;
+}
+
+.imgprojects{
+    border-radius: 20px;
+}
+
+
+.projectcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.circle:hover{
+    background-color: white;
+}
+
+.row1{
+    display: flex;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+}
+
+.gridcontainer{
+    display: grid;
+    gap: 9px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 50px 50px 100px;
+
+}
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    background-color: #F7E7DC;
+    padding: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    
+}
+
+
+/*for phone view*/
+@media all and (max-width: 480px){
+
+    .me{
+        height: 300px;
+    }
+
+    .resumecolumn1 > h1{
+        font-size: 4rem;
+    }
+
+    .mcontainer{
+        flex-direction: column;
+    }
+
+    .column1{
+        text-align: center;
+    }
+
+    .column2{
+        text-align: center;
+    }
+
+    .circlebuttons{
+        justify-content: center;
+    }
+
+    .resumecontent{
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .projectcontent{
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .projectlist{
+        width: 100%;
+    }
+
+    .resumetext{
+        margin: 20px 0 20px 60px;
+    }
+
+    .resumecolumn1{
+        width: 80%;
+    }
+
+    .resumecolumn2{
+        width: 80%;
+    }
+
+    .resumecolumn3{
+        width: 80%;
+    }
+
+
+    .imgprojects{
+        border-radius: 20px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+}
